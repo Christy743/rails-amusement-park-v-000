@@ -25,6 +25,8 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'rack-flash3'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
@@ -41,12 +43,13 @@ group :test, :development do
   gem "better_errors"
   gem "sprockets_better_errors"
   gem "binding_of_caller"
-  gem "factory_girl_rails"
+  #gem "factory_girl_rails"
   gem "simplecov"
   gem "database_cleaner"
   gem "sqlite3"
   gem "pry"
   gem "rack_session_access"
+  gem "factory_bot_rails"
 end
 
 group :production do

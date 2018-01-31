@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<% if session[:messages] %>
+  <%= session[:messages][-1] %>
+<% end %>
+
+<% if @user.admin %>
+  <strong> ADMIN </strong>
+<% end %>
+<br></br>
+
+<p><strong>Name: </strong><%= @user.name %></p>
+<p><strong>Tickets: </strong><%= @user.tickets %></p>
+<p><strong>Mood: </strong><%= @user.mood %></p>
+<p><strong>Height: </strong><%= @user.height %></p>
+
+<%= link_to "Edit", edit_user_path(@user) %>
+<br>
+<%= link_to "See attractions", attractions_path %>
