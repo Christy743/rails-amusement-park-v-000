@@ -1,5 +1,6 @@
 class Ride < ActiveRecord::Base
   # write associations here
+
   belongs_to :attraction
   belongs_to :user
 
@@ -13,10 +14,6 @@ class Ride < ActiveRecord::Base
     else !enough_tickets && !tall_enough
       "Sorry. You do not have enough tickets to ride the #{attraction.name}. You are not tall enough to ride the #{attraction.name}."
     end
-    #user not having enough tickets
-    #user not tall enough
-    #updates ticket number
-    #updates user nausea, happiness
   end
 
   def enough_tickets

@@ -42,6 +42,7 @@ class AttractionsController < ApplicationController
     redirect_to attractions_url, notice: "Attraction was successfully destroyed."
   end
 
+
   private
 
   def set_attraction

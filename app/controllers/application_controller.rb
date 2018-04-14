@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
+
   protect_from_forgery with: :exception
   before_action :current_user
   before_action :require_logged_in, except: [:new, :create, :home]
@@ -8,6 +9,7 @@ class ApplicationController < ActionController::Base
   #Putting a note here because I have completed this lab/project and for some
   #reason it says I didn't do this, but if you look at my repositories you will
   #find that I worked on this.
+
 
   def home
   end
