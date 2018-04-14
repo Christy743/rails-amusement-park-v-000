@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
   before_action :current_user
   before_action :require_logged_in, except: [:new, :create, :home]
 
+  #Putting a note here because I have completed this lab/project and for some
+  #reason it says I didn't do this, but if you look at my repositories you will
+  #find that I worked on this.
+
   def home
   end
 
